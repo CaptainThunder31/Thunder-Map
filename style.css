@@ -33,9 +33,8 @@ body {
 }
 
 label {
-  margin-top: 20px;
-  font-size: 2rem;
-  color: #555;
+  font-size: 1.5rem;
+  color: #333;
 }
 
 input[type='text'] {

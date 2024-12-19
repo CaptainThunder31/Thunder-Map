@@ -93,7 +93,7 @@ input[type='text']:focus {
   top: 0vh; /* Adjust to move the map higher */
   transform: translateY(-40%);
   border: 10px solid #333;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 #dotGrid {

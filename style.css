@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'K2D', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #FFF8C3, #FEE38A);
+  color: #333;
+  
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  margin-top: 20px;
+  font-size: 2rem;
+  color: #555;
+}
+
+input[type='text'] {
+  margin-top: 10px;
+  padding: 10px 20px;
+  width:80vw;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  background: #EBa0C3;
+  border: 3px solid #333;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type='text']:focus {
+  border-color: #5a65ff;
+  box-shadow: 0 0 8px rgba(90, 101, 255, 0.6);
+}
+
+#start {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  background: #EBC300;
+  border: 3px solid #333;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#start:hover {
+  transform: translateY(-3px);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#start:active {
+  transform: translateY(1px);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+#wrapperX{
+  width:95vw;
+  height:27vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*position: absolute;*/
+  top: 0vh; /* Adjust to move the map higher */
+  transform: translateY(-40%);
+  border: 10px solid #333;
+  margin-top: 12vh;
+}
+
+#dotGrid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  aspect-ratio: 2 / 1; /* Keeps the world map proportion */
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+}
+.dot {
+  display: inline-block;
+  border-radius: 50%; /* Makes the dots circular */
+  transition: all 0.2s ease;
+}
+
+#data{
+  width:80vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-evenly;
+  margin-top:-8vh;
+}
+
+#data div{
+    margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  background: #C3EB00;
+  border: 3px solid #333;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+canvas {
+  display: none;
+} 

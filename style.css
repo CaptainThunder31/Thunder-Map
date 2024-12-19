@@ -3,10 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'K2D', sans-serif;
+  max-width: 500px;
 }
 
 body {
   display: flex;
+  max-width: 100vw;
   flex-direction: column;
   align-items: center;
   width: 100vw;
@@ -83,6 +85,8 @@ input[type='text']:focus {
 #wrapperX{
   width:95vw;
   height:27vh;
+  max-width: 350px;
+  max-height: 175px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,14 +94,15 @@ input[type='text']:focus {
   top: 0vh; /* Adjust to move the map higher */
   transform: translateY(-40%);
   border: 10px solid #333;
-  margin-top: 12vh;
+  margin-top: 100px;
 }
 
 #dotGrid {
   display: grid;
   width: 100%;
   height: 100%;
-  max-width: 100%;
+  max-width: 350px;
+  max-height: 175px;
   aspect-ratio: 2 / 1; /* Keeps the world map proportion */
   justify-content: center;
   align-content: center;
@@ -115,12 +120,12 @@ input[type='text']:focus {
   display: flex;
   flex-direction: column;
   align-items: left;
-  justify-content: space-evenly;
-  margin-top:-8vh;
+  justify-content: center;
+  margin-top:-50px;
 }
 
 #data div{
-    margin-top: 10px;
+  margin-top: 10px;
   padding: 10px 20px;
   font-size: 1.2rem;
   font-weight: bold;

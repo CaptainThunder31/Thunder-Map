@@ -61,7 +61,7 @@ function processImage(src, lat, long) {
 
     // Highlight the latitude and longitude
     const latIndex = Math.round(((90 - lat) / 180) * rows);
-    const longIndex = Math.round(((180 + long) / 360) * columns) - 10;
+    const longIndex = Math.round(((180 + long) / 360) * columns) - 12;
 
     for (let col = 0; col < columns; col++) {
       if (gridArray[latIndex] && gridArray[latIndex][col]) {
